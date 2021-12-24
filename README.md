@@ -5,7 +5,7 @@ Code example on how to show/hide columns and have others fill the gap
 string reportXml = File.ReadAllText("./SomeReport.rdlc");
 
 string tablixName = "SomeTable";
-bool[] visibilityForEachColumn = new []{ true, false, true };
+bool[] visibilityForEachColumn = { true, false, true };
 
 var columns = new RDLCColumns(reportXml, tablixName, visibilityForEachColumn);
 string updatedXml = columns.UpdatedXml();
