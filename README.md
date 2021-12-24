@@ -1,6 +1,12 @@
 # RDLCDynamicColumns
-Code example on how to show/hide columns and have others fill the gap
 
+I've not found a solution online to simulate dynamic columns for RDLC table/matrix.
+So I've decided to make a code example on how to achieve that by reading the XML from the RDLC and manipulating it before inserting it into the reportView.
+
+This code assumes that you have all column visibilities set to "show".
+Based on the param ColumnVisibilities for RDLCColumns it sets them to hidden and redistributes their width to the visible columns.
+
+Example:
 ```
 string reportXml = File.ReadAllText("./SomeReport.rdlc");
 
