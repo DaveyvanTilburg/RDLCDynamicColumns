@@ -6,6 +6,8 @@ So I've decided to make a code example on how to achieve that by reading the XML
 This code assumes that you have all column visibilities set to "show".
 Based on the param ColumnVisibilities for RDLCColumns it sets them to hidden and redistributes their width to the visible columns.
 
+Use as you please, I hope this helps others resolve this design flaw in RDLC reports
+
 Example:
 ```
 string reportXml = File.ReadAllText("./SomeReport.rdlc");
